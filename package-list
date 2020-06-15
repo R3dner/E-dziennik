@@ -1,0 +1,7 @@
+com.ediary.controllers
+com.ediary.converters
+com.ediary.database.dao
+com.ediary.database.models
+com.ediary.database.utils
+com.ediary.main
+com.ediary.modelFx

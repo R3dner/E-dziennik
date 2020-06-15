@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane accessibleRole="PASSWORD_FIELD" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ediary.controllers.RegistrationController">
+   <children>
+      <Button fx:id="acceptButton" layoutX="203.0" layoutY="719.0" mnemonicParsing="false" onAction="#confirmNewUser" prefHeight="25.0" prefWidth="97.0" text="Potwierdź" AnchorPane.leftAnchor="203.0" AnchorPane.rightAnchor="54.0" />
+      <Label layoutX="92.0" layoutY="58.0" text="Imię:" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="236.0" AnchorPane.topAnchor="58.0" />
+      <Label layoutX="91.0" layoutY="113.0" text="Nazwisko:" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="113.0" />
+      <Label layoutX="91.0" layoutY="177.0" text="Data urodzenia:" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="179.0" AnchorPane.topAnchor="177.0" />
+      <Label layoutX="89.0" layoutY="233.0" text="Adres e-mail:" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="178.0" AnchorPane.topAnchor="233.0" />
+      <Label layoutX="89.0" layoutY="290.0" text="Numer telefonu:" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="178.0" AnchorPane.topAnchor="290.0" />
+      <TextField fx:id="nameField" layoutX="91.0" layoutY="75.0" minWidth="100.0" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="114.0" AnchorPane.topAnchor="75.0" />
+      <TextField fx:id="surnameField" layoutX="90.0" layoutY="130.0" minWidth="100.0" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="130.0" />
+      <TextField fx:id="mailField" layoutX="89.0" layoutY="250.0" minWidth="100.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="250.0" />
+      <TextField fx:id="phoneField" layoutX="89.0" layoutY="307.0" minWidth="100.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="307.0" />
+      <TextField fx:id="addressField" layoutX="89.0" layoutY="365.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="365.0" />
+      <Label layoutX="88.0" layoutY="348.0" text="Adres:" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="348.0" />
+      <Label layoutX="88.0" layoutY="404.0" text="Hasło:" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="404.0" />
+      <PasswordField fx:id="passwordField" layoutX="89.0" layoutY="421.0" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="421.0" />
+      <Button fx:id="previewPassButton" layoutX="240.0" layoutY="421.0" mnemonicParsing="false" onMousePressed="#setPasswordToVisible" text="Podgląd" AnchorPane.leftAnchor="240.0" />
+      <Label layoutX="88.0" layoutY="457.0" text="Powtórz hasło:" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="188.0" AnchorPane.topAnchor="457.0" />
+      <PasswordField fx:id="repPasswordField" layoutX="89.0" layoutY="474.0" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="474.0" />
+      <Button layoutX="240.0" layoutY="474.0" mnemonicParsing="false" text="Podgląd" AnchorPane.leftAnchor="240.0" AnchorPane.topAnchor="474.0" />
+      <Button fx:id="backButton" layoutX="78.0" layoutY="719.0" mnemonicParsing="false" onAction="#goBack" text="Wstecz" AnchorPane.leftAnchor="78.0" AnchorPane.topAnchor="719.0" />
+      <Label contentDisplay="CENTER" layoutX="128.0" layoutY="14.0" text="REJESTRACJA" AnchorPane.leftAnchor="128.0" AnchorPane.rightAnchor="155.0" AnchorPane.topAnchor="14.0" />
+      <ChoiceBox fx:id="studentTeacherChoiceBox" layoutX="91.0" layoutY="528.0" prefWidth="150.0" AnchorPane.leftAnchor="91.0" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="528.0" />
+      <Label layoutX="90.0" layoutY="511.0" text="Uczeń/Nauczyciel" AnchorPane.leftAnchor="90.0" AnchorPane.rightAnchor="170.0" AnchorPane.topAnchor="511.0" />
+      <TextField fx:id="birthField" layoutX="89.0" layoutY="194.0" AnchorPane.leftAnchor="89.0" AnchorPane.rightAnchor="116.0" AnchorPane.topAnchor="194.0" />
+      <Label fx:id="alertLabel" alignment="CENTER" layoutX="83.0" layoutY="683.0" prefHeight="17.0" prefWidth="202.0" />
+      <ChoiceBox fx:id="schoolChoiceBox" layoutX="91.0" layoutY="581.0" prefWidth="150.0" />
+      <Label layoutX="91.0" layoutY="564.0" text="Szkoła" />
+      <ChoiceBox fx:id="groupChoiceBox" layoutX="90.0" layoutY="639.0" prefWidth="150.0" />
+      <Label fx:id="groupLabel" layoutX="91.0" layoutY="622.0" text="Grupa" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+
+<BorderPane fx:id="borderPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ediary.controllers.StudentScreenController">
+   <top>
+      <HBox alignment="TOP_CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#openGrades" text="Oceny" />
+            <Button mnemonicParsing="false" onAction="#openOptions" text="Ustawienia" />
+            <Label fx:id="loginLabel" text="Zalogowano jako: ">
+               <padding>
+                  <Insets left="160.0" right="100.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#logOut" text="Wyloguj" />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <AnchorPane prefHeight="222.0" prefWidth="707.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
